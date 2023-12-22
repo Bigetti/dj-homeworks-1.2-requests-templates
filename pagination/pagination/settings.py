@@ -126,7 +126,10 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'assets'),
 ]
 
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BUS_STATION_CSV = os.path.join(BASE_DIR, 'data-398-2018-08-30.csv')
+# BUS_STATION_CSV = os.path.join(BASE_DIR, 'data-398-2018-08-30.csv')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

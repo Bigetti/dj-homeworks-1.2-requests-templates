@@ -36,6 +36,6 @@ def bus_stations(request):
 
     # Формирование контекста
     context = {
-        'bus_stations': page_obj,
+         'bus_stations': paginator.get_page(page_number),
     }
     return render(request, 'stations/index.html', context)
